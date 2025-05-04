@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand in Hand - Connecting Donors with Those in Need</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2F855A',
+                        secondary: '#3182CE',
+                        accent: '#DD6B20',
+                    },
+                    fontFamily: {
+                        'sans': ['Helvetica', 'Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #2F855A 0%, #3182CE 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .review-card {
+            transition: all 0.3s ease;
+        }
+        .review-card:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-hands-helping text-primary text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-primary">Hand in Hand</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-white bg-primary">Home</a>
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-primary">About</a>
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-primary">How It Works</a>
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-primary">Contact</a>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <a href="login.html" class="text-gray-600 hover:text-primary mr-4">Sign In</a>
+                    <a href="register.html" class="bg-primary hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-medium">
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                    Bridging the Gap Between Generosity and Need
+                </h1>
+                <p class="mt-6 max-w-2xl mx-auto text-xl">
+                    Hand in Hand connects compassionate donors with individuals and organizations in need, creating meaningful impact in communities worldwide.
+                </p>
+                <div class="mt-10">
+                    <a href="register.html" class="inline-block bg-white text-primary px-8 py-3 border border-transparent rounded-md font-medium hover:bg-gray-100">
+                        Join Our Community
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- What We Do Section -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    What We Do
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    We make giving and receiving help simple, transparent, and impactful.
+                </p>
+            </div>
+
+            <div class="mt-16 grid gap-8 md:grid-cols-3">
+                <!-- Card 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm transition-all duration-300 card-hover">
+                    <div class="flex justify-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
+                            <i class="fas fa-hand-holding-heart text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <h3 class="text-lg font-medium text-gray-900">Direct Donations</h3>
+                        <p class="mt-2 text-gray-500">
+                            Connect directly with individuals or organizations in need. See exactly where your donations go and the impact they make.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm transition-all duration-300 card-hover">
+                    <div class="flex justify-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-secondary text-white">
+                            <i class="fas fa-users text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <h3 class="text-lg font-medium text-gray-900">Community Building</h3>
+                        <p class="mt-2 text-gray-500">
+                            Join a community of like-minded individuals committed to making a difference. Share stories, resources, and inspiration.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm transition-all duration-300 card-hover">
+                    <div class="flex justify-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-accent text-white">
+                            <i class="fas fa-chart-line text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <h3 class="text-lg font-medium text-gray-900">Transparent Tracking</h3>
+                        <p class="mt-2 text-gray-500">
+                            Our platform provides complete transparency. Track your donations and see the real-world impact of your generosity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Stories -->
+    <div class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Stories of Impact
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    Hear from those who've experienced the power of giving and receiving through Hand in Hand.
+                </p>
+            </div>
+
+            <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm review-card">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah J.">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-medium text-gray-900">Sarah J.</h4>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-600 italic">
+                            "After losing my job, Hand in Hand connected me with donors who helped pay my rent and groceries. The kindness of strangers gave me hope when I needed it most."
+                        </p>
+                    </div>
+                    <div class="mt-4 flex items-center text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-1"></i>
+                        <span>March 15, 2023</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm review-card">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/54.jpg" alt="Michael T.">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-medium text-gray-900">Michael T.</h4>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-600 italic">
+                            "As a donor, I love seeing exactly where my money goes. I've helped fund medical treatments, school supplies, and small business startups - all through this amazing platform."
+                        </p>
+                    </div>
+                    <div class="mt-4 flex items-center text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-1"></i>
+                        <span>January 28, 2023</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm review-card">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Lisa M.">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-medium text-gray-900">Lisa M.</h4>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-600 italic">
+                            "Our community center received donations for a new playground through Hand in Hand. The process was so easy, and we could share updates with our donors directly."
+                        </p>
+                    </div>
+                    <div class="mt-4 flex items-center text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-1"></i>
+                        <span>November 5, 2022</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Reviews Button -->
+            <div class="mt-12 text-center">
+                <a href="#" class="inline-block bg-primary text-white px-6 py-3 border border-transparent rounded-md font-medium hover:bg-green-700">
+                    Read More Success Stories
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="bg-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-5xl font-bold">5,000+</div>
+                    <div class="mt-2 text-lg">Lives Impacted</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold">$2M+</div>
+                    <div class="mt-2 text-lg">Donations Processed</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold">98%</div>
+                    <div class="mt-2 text-lg">Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                Ready to Make a Difference?
+            </h2>
+            <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                Join our community of givers and receivers today.
+            </p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="register.html" class="inline-block bg-primary text-white px-8 py-3 border border-transparent rounded-md font-medium hover:bg-green-700">
+                    Sign Up Now
+                </a>
+                <a href="#" class="inline-block bg-white text-primary px-8 py-3 border border-primary rounded-md font-medium hover:bg-gray-50">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Hand in Hand</h3>
+                    <p class="text-gray-400">
+                        Connecting generosity with need to create meaningful impact in communities worldwide.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">How It Works</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Account</h3>
+                    <ul class="space-y-2">
+                        <li><a href="login.html" class="text-gray-400 hover:text-white">Sign In</a></li>
+                        <li><a href="register.html" class="text-gray-400 hover:text-white">Sign Up</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Forgot Password</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-400">contact@handinhand.org</p>
+                        <p class="text-gray-400">+1 (555) 123-4567</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2023 Hand in Hand. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for review cards when they come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.review-card').forEach(card => {
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Stats counter animation
+        const statElements = document.querySelectorAll('.text-5xl');
+        const stats = [5000, 2000000, 98];
+        const durations = [2000, 2500, 1500];
+        
+        function animateStats() {
+            statElements.forEach((el, index) => {
+                const target = stats[index];
+                const duration = durations[index];
+                const start = 0;
+                const increment = target / (duration / 16);
+                
+                let current = start;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        clearInterval(timer);
+                        current = target;
+                    }
+                    
+                    if (index === 1) { // For the dollar amount
+                        el.textContent = '$' + Math.floor(current).toLocaleString() + '+';
+                    } else if (index === 2) { // For percentage
+                        el.textContent = Math.floor(current) + '%';
+                    } else {
+                        el.textContent = Math.floor(current) + '+';
+                    }
+                }, 16);
+            });
+        }
+        
+        // Start animation when stats section comes into view
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        statsObserver.observe(document.querySelector('.bg-primary'));
+    </script>
+</body>
+</html>
