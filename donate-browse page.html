@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand in Hand - Donate or Browse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(47, 133, 90, 0.1) 0%, rgba(49, 130, 206, 0.1) 100%);
+        }
+        .action-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        .action-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-hands-helping text-green-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-green-600">Hand in Hand</span>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-green-600">
+                        <i class="fas fa-user-circle mr-1"></i> My Account
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="hero-gradient">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+                    Make a Difference Today
+                </h1>
+                <p class="mt-5 max-w-xl mx-auto text-xl text-gray-500">
+                    Choose how you'd like to help your community
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-8 md:grid-cols-2 md:gap-12 max-w-4xl mx-auto">
+                <!-- Donate Card -->
+                <div class="action-card bg-white rounded-xl p-8 text-center">
+                    <div class="mx-auto flex items-center justify-center h-20 w-20 rounded-full bg-green-50 mb-6">
+                        <i class="fas fa-gift text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Give to Those in Need</h3>
+                    <p class="text-gray-600 mb-6">
+                        Donate items you no longer need but could help others. Every contribution makes a difference.
+                    </p>
+                    <a href="Donation dashboard.html" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 pulse-animation">
+                        <i class="fas fa-plus-circle mr-2"></i> List a Donation
+                    </a>
+                    <div class="mt-6 text-sm text-green-600">
+                        <a href="#" class="font-medium">Learn how donations work <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Browse Card -->
+                <div class="action-card bg-white rounded-xl p-8 text-center">
+                    <div class="mx-auto flex items-center justify-center h-20 w-20 rounded-full bg-blue-50 mb-6">
+                        <i class="fas fa-search text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Find What You Need</h3>
+                    <p class="text-gray-600 mb-6">
+                        Browse items donated by your community. Request what you need to improve your life.
+                    </p>
+                    <a href="browse donations.html" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 pulse-animation">
+                        <i class="fas fa-search mr-2"></i> Browse Donations
+                    </a>
+                    <div class="mt-6 text-sm text-blue-600">
+                        <a href="#" class="font-medium">See donation guidelines <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How It Works Section -->
+            <div class="mt-20 max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">How It Works</h2>
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <div class="grid gap-8 md:grid-cols-3">
+                        <div class="text-center">
+                            <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100 text-green-600 mb-4">
+                                <span class="text-xl font-bold">1</span>
+                            </div>
+                            <h3 class="text-lg font-medium text-gray-900 mb-2">List or Browse</h3>
+                            <p class="text-gray-600 text-sm">
+                                Donors list items they want to give away. Those in need browse available donations.
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mb-4">
+                                <span class="text-xl font-bold">2</span>
+                            </div>
+                            <h3 class="text-lg font-medium text-gray-900 mb-2">Connect</h3>
+                            <p class="text-gray-600 text-sm">
+                                Our system matches donors with recipients based on location and needs.
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-purple-100 text-purple-600 mb-4">
+                                <span class="text-xl font-bold">3</span>
+                            </div>
+                            <h3 class="text-lg font-medium text-gray-900 mb-2">Exchange</h3>
+                            <p class="text-gray-600 text-sm">
+                                Arrange a pickup or delivery to complete the donation exchange.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Testimonials -->
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Community Stories</h2>
+            <div class="grid gap-8 md:grid-cols-3">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="h-10 w-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-900">Sarah J.</h4>
+                            <p class="text-sm text-gray-500">Donor</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "I was able to give my daughter's old crib to a young family who really needed it. The process was so simple and rewarding!"
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-900">Michael T.</h4>
+                            <p class="text-sm text-gray-500">Recipient</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "After losing my job, I found furniture and kitchenware through Hand in Hand that helped me get back on my feet."
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="h-10 w-10 rounded-full bg-purple-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-900">Lisa M.</h4>
+                            <p class="text-sm text-gray-500">Community Volunteer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "I love helping coordinate pickups between donors and recipients. It's amazing to see our community come together like this."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-hands-helping text-green-400 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-green-400">Hand in Hand</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Connecting those who have with those who need. Building stronger communities through sharing.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase mb-4">For Donors</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">How to Donate</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Accepted Items</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Tax Information</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Donor Stories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase mb-4">For Recipients</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Request Items</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Eligibility</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Pickup Options</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase mb-4">Connect</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Questions? <a href="#" class="text-green-400 hover:text-green-300">Contact our team</a>
+                    </p>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
+                <p>&copy; 2023 Hand in Hand. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for the action buttons
+        document.querySelectorAll('.pulse-animation').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.classList.remove('pulse-animation');
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                this.classList.add('pulse-animation');
+            });
+        });
+
+        // In a real application, you would add click handlers for the main buttons
+        document.querySelector('[href="Donation dashboard.html"]').addEventListener('click', function(e) {
+            // This would navigate to the donation listing page
+            //alert('Redirecting to donation listing page...');
+        });
+
+        document.querySelector('[href="browse donations.html"]').addEventListener('click', function(e) {
+            // This would navigate to the browse donations page
+            //alert('Redirecting to browse donations page...');
+        });
+    </script>
+</body>
+</html>
